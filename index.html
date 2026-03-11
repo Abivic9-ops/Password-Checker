@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker | Abivic9-Ops</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="logo">Password Checker
+    </header>
+
+    <section class="home">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-intro">
+                    <h2> Password Strength Checker Guide <i class='bx bx-down-arrow-circle'></i></h2>
+
+                    <p>
+                        <span>W</span>elcome to the Password Checker. This small tool helps you create a safe and strong
+                        password.
+                        A strong password protects your accounts and keeps your personal information secure.
+                    </p>
+                </div>
+
+                <div class="functionality-box">
+                    <h3>What This Tool Does</h3>
+
+                    <p>
+                        The password checker looks at the password you type and checks if it follows some simple safety
+                        rules.
+                        If the password is strong the system will approve it.
+                        If it is weak the system will guide you on how to improve it.
+                    </p>
+                </div>
+
+                <div class="usability-box">
+                    <h3> How To Use It</h3>
+
+                    <ol>
+                        <li><i class="fa-solid fa-keyboard"></i> Type your password in the input box.</li>
+                        <li><i class="fa-solid fa-mouse-pointer"></i> Click the Check Password button.</li>
+                        <li><i class="fa-solid fa-eye"></i> Read the message that appears below.</li>
+                    </ol>
+                </div>
+                <div class="rules-box">
+                    <h3> Rules For A Strong Password</h3>
+
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> It should have at least 8 characters.</li>
+                        <li><i class="fa-solid fa-check"></i> It should contain at least one capital letter.</li>
+                        <li><i class="fa-solid fa-check"></i> It should contain at least one number.</li>
+                    </ul>
+                </div>
+
+                <div class="help-box">
+                    <h3></i> Helpful Tip</h3>
+                    <p>
+                        A good password is easy for you to remember but hard for others to guess.
+                        You can mix letters and numbers to make it stronger.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="password-input-box">
+            <div class="input">
+                <label for="password" class="input-label">* Password </label><br>
+                <input type="password" id="password" class="input-field" placeholder="Enter your password">
+                <img src="images/eye.png" class="input-icon">
+            </div>
+
+            <div class="password-strength">
+                <p><span id="result"></span></p>
+                <div class="progress">
+                    <div class="progress-bar" id="password-strength" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 0; height:3px;"></div>
+                </div>
+            </div>
+
+            <ul class="password-strength-items">
+                <h3>Requirements</h3>
+                <li class="low-upper-case">
+                    <img src="images/x-circle.png" alt="cross" class="check-icon"> lowercase & Uppercase Letters
+                </li>
+                <li class="one-number">
+                    <img src="images/x-circle.png" alt="cross" class="check-icon"> Numbers (0-9)
+                </li>
+                <li class="one-special-char">
+                    <img src="images/x-circle.png" alt="cross" class="check-icon"> Special Characters (!@#$%^&*()-+)
+                </li>
+                <li class="eight-character">
+                    <img src="images/x-circle.png" alt="cross" class="check-icon"> At least 8 characters
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    
+   <footer class="footer-section">
+    <p>&copy; 2026 Abivic9-Ops. All rights reserved.</p>
+     <div class="social-media">
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+    </div>
+   </footer>
+</body>
+
+</html>
